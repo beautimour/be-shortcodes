@@ -1,10 +1,10 @@
 <?php
 /*
  Plugin Name: Rescue Shortcodes
- Plugin URI: http://rescuethemes.com
- Description: A lightweight shortcodes plugin for themes developed by <a href="http://rescuethemes.com">Rescue Themes</a>
+ Plugin URI: https://github.com/RescueThemes/rescue-shortcodes
+ Description: A lightweight shortcodes plugin for themes developed by <a href="http://themeforest.net/user/RescueThemes">Rescue Themes</a>
  Author: Rescue Themes
- Author URI: http://rescuethemes.com
+ Author URI: http://themeforest.net/user/RescueThemes
  Version: 1.1
  License: GNU General Public License version 2.0
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
