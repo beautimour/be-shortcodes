@@ -1,0 +1,31 @@
+<?php
+/*
+ Plugin Name: Rescue Shortcodes
+ Plugin URI: http://rescuethemes.com
+ Description: A lightweight shortcodes plugin for themes developed by <a href="http://rescuethemes.com">Rescue Themes</a>
+ Author: Rescue Themes
+ Author URI: http://rescuethemes.com
+ Version: 1.1
+ License: GNU General Public License version 2.0
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*----------------------------------------------------*/
+/*  Exit if accessed directly
+/*----------------------------------------------------*/
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+/*----------------------------------------------------*/
+/* JS and CSS
+/*----------------------------------------------------*/
+require_once( dirname(__FILE__) . '/includes/scripts.php' );
+
+/*----------------------------------------------------*/
+/*  Shortcode functions
+/*----------------------------------------------------*/
+require_once( dirname(__FILE__) . '/includes/shortcode-functions.php');
+
+/*----------------------------------------------------*/
+/*  Add button to WP editor
+/*----------------------------------------------------*/
+require_once( dirname(__FILE__) . '/includes/mce/rescue_shortcodes_tinymce.php');
