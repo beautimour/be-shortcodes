@@ -13,8 +13,8 @@ When activated, this plugin will add a button to the WordPress text editor to ea
 Installation
 ================
 
-1. Upload the `rescue-shortcodes` folder to the `/wp-content/plugins/` directory. Alternately, you can download this package as a zip and upload it via the WordPress dashboard.
-2. Activate the plugin through the 'Plugins' menu in WordPress
+1. Upload the plugin to `/wp-content/plugins/`. Alternately, you can download this package as a zip and upload it via the WordPress dashboard.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click the Rescue Themes icon in the WordPress text editor to display your shortcodes options.
 
 Frequently Asked Questions
@@ -22,9 +22,9 @@ Frequently Asked Questions
 
 Can I use these shortcodes in any widgetized area?
 
-Yep, you simply copy/paste the shortcode provided to you from the text editor into any widgetized area.
+Yes. You can copy/paste the shortcode provided to you from the text editor into a text widget.
 
-Where can I check out other themes and plugins by Rescue Themes?
+Where can I check out themes by Rescue Themes?
 
 Glad you asked! http://themeforest.net/user/RescueThemes/portfolio
 
