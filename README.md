@@ -27,3 +27,7 @@ Yep, you simply copy/paste the shortcode provided to you from the text editor in
 Where can I check out other themes and plugins by Rescue Themes?
 
 Glad you asked! http://themeforest.net/user/RescueThemes/portfolio
+
+Does this work with WordPress 3.9?
+
+Yes. This plugin will work with the new updates WP 3.9 brought to TinyMCE and is backward compatible with 3.8 too.
