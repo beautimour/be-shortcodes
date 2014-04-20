@@ -1,7 +1,7 @@
 rescue-shortcodes
 =================
 
-A lightweight shortcodes plugin for themes developed by Rescue Themes
+A lightweight WordPress shortcodes plugin for themes developed by Rescue Themes
 
 Description
 ================
