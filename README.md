@@ -26,7 +26,7 @@ Yes. You can copy/paste the shortcode provided to you from the text editor into 
 
 Where can I check out themes by Rescue Themes?
 
-Glad you asked! http://themeforest.net/user/RescueThemes/portfolio
+Glad you asked! http://themeforest.net/user/RescueThemes/portfolio?ref=rescuethemes
 
 Does this work with WordPress 3.9?
 
