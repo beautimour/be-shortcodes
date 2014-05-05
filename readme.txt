@@ -1,4 +1,5 @@
-=== Plugin Name ===
+=== Plugin Details ===
+Plugin Name: Rescue Shortcodes
 Contributors: rescuethemes
 Donate link: http://rescuethemes.com
 Tags: plugin, widget, shortcodes
