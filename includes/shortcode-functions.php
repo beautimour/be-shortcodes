@@ -1,6 +1,11 @@
 <?php
 
 /*----------------------------------------------------*/
+/*  Allow shortcodes in widgets
+/*----------------------------------------------------*/
+add_filter('widget_text', 'do_shortcode');
+
+/*----------------------------------------------------*/
 /*  Fix Shortcodes
 /*----------------------------------------------------*/
 if( !function_exists('rescue_fix_shortcodes') ) {
@@ -342,6 +347,9 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
 	    'color' => '',
 	 
 	    ), $atts));
+
+		// load scripts
+		wp_enqueue_style('font_awesome');
 	     
 	    $type = ($type) ? 'fa-'.$type. '' : '';
 	    $size = ($size) ? 'fa-'.$size. '' : '';
@@ -358,3 +366,35 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
  
 	add_shortcode('icon', 'RescueFontAwesome');
 endif;
+
+/*----------------------------------------------------*/
+/*  Animation Effects
+/*----------------------------------------------------*/
+if (! function_exists( 'rescue_animate_shortcode' ) ) :
+	function rescue_animate_shortcode($atts, $content = null) {
+
+	    extract(shortcode_atts(array(
+	    'type'  => '',
+	    'duration' => '',
+	    'delay' => '',
+	    'iteration' => '',
+	 
+	    ), $atts));
+
+		// load scripts
+		wp_enqueue_script('rescue_wow');
+		wp_enqueue_style('rescue_animate');
+
+	    $type = ($type) ? ''.$type. '' : '';
+	    $duration = ($duration) ? ''.$duration. '' : '';
+	    $delay = ($delay) ? ''.$delay. '' : '';
+	    $iteration = ($iteration) ? ''.$iteration. '' : '';
+	 
+	    $rescue_animate = '<div class="wow '.$type.'" data-wow-duration="'.$duration.'" data-wow-delay="'.$delay.'" data-wow-iteration="'.$iteration.'">' . do_shortcode($content) . '</div>';
+	     
+	    return $rescue_animate;
+	}
+ 
+	add_shortcode('rescue_animate', 'rescue_animate_shortcode');
+endif;
+

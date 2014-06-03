@@ -5,15 +5,13 @@ Donate link: http://rescuethemes.com
 Tags: plugin, widget, shortcodes
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 1.2.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A lightweight WordPress shortcodes plugin for themes developed by Rescue Themes
 
 === Description ===
-
-This plugin is designed to work with themes by Rescue Themes. You're welcome to use it with other theme but you may need to fiddle with the styling.
 
 When activated, this plugin will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
@@ -27,15 +25,20 @@ When activated, this plugin will add a button to the WordPress text editor to ea
 
 Can I use these shortcodes in any widgetized area?
 
-As long as your theme uses ' add_filter('widget_text', 'do_shortcode'); ' in its functions.php file, then yes, you can copy/paste the shortcode provided to you from the text editor into a text widget. All themes by Rescue Themes support shortcodes in widetized areas automatically.
+Yes, you can copy/paste the shortcode provided to you from the text editor into a widget. 
 
 Where can I check out themes by Rescue Themes?
 
-I'm glad you asked! Here's our current portfolio of themes:
+Glad you asked! Here's our current portfolio of themes:
 
 http://rescuethemes.com/themes-plugins
 
 == Changelog ==
+
+= 1.3 =
+* Added animation effects
+* Added widget support
+* Removed WP 3.8 support
 
 = 1.2.1 =
 * Updated links and added readme.txt

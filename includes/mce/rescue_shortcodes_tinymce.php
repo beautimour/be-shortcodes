@@ -23,9 +23,6 @@ class RESCUE_TinyMCE_Buttons {
     }
     function rescue_admin_head() {
         ?>
-        <script>
-        var rescue_wp_version = '<?php global $wp_version; echo $wp_version; ?>';
-        </script>
         <style>
         .mce-menu-item-title { background: transparent none !important; cursor: default !important; }
         .mce-menu-item-title span { color: #000 !important; font-weight: bold; }
@@ -34,4 +31,3 @@ class RESCUE_TinyMCE_Buttons {
     }
 }
 $rescueshortcode = new RESCUE_TinyMCE_Buttons;
-

@@ -30,7 +30,6 @@ function rescue_on_click(id) {
     }
 
 
-
     // Button
     if(id == "button") {
         tinyMCE.activeEditor.selection.setContent('[rescue_button color="blue" url="http://rescuethemes.com" title="Visit Site" target="blank" class="right" border_radius=""]' + rescueDummyContent + '[/rescue_button]');
@@ -47,8 +46,6 @@ function rescue_on_click(id) {
     if(id == "icon") {
         tinyMCE.activeEditor.selection.setContent('[icon type="cloud" size="3x" pull="left" color="#cccccc"]');
     }
-
-
 
 
     // Columns
@@ -83,8 +80,6 @@ function rescue_on_click(id) {
     }
 
 
-
-
     // Google Map
     if(id == "googlemap") {
         tinyMCE.activeEditor.selection.setContent('[rescue_googlemap title="Rescue Themes Offices" location="5046 S Greenwood Ave, Chicago, IL 60615" zoom="14" height=250]');
@@ -115,7 +110,6 @@ function rescue_on_click(id) {
     }
 
 
-
     //General Tabs
     if(id == "tabs") {
         tinyMCE.activeEditor.selection.setContent('[rescue_tabgroup]<br />[rescue_tab title="First Tab"]<br />First tab content<br />[/rescue_tab]<br />[rescue_tab title="Second Tab"]<br />Second Tab Content.<br />[/rescue_tab]<br />[/rescue_tabgroup]');
@@ -132,11 +126,50 @@ function rescue_on_click(id) {
         tinyMCE.activeEditor.selection.setContent('[rescue_toggle title="This Is Your Toggle Title"]' + rescueDummyContent + '[/rescue_toggle]');
     }
 
+    // Animations
+    if(id == "slideInDown") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="slideInDown" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "slideInLeft") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="slideInLeft" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "slideInRight") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="slideInRight" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "fadeIn") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="fadeIn" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "fadeInLeft") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="fadeInLeft" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "fadeInRight") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="fadeInRight" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "fadeInUp") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="fadeInUp" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "fadeInDown") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="fadeInDown" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "bounceIn") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="bounceIn" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "bounceInLeft") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="bounceInLeft" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "bounceInRight") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="bounceInRight" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "bounceInUp") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="bounceInUp" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
+    if(id == "bounceInDown") {
+        tinyMCE.activeEditor.selection.setContent('[rescue_animate type="bounceInDown" duration="2s" delay="0s" iteration="1"]' + rescueDummyContent + '[/rescue_animate]');
+    }
 
     return false;
 }
 
-// For WP 3.9+
 function rescue_render_item(parent_item, title, id) {
     var item = {
         'text': title,
@@ -145,7 +178,6 @@ function rescue_render_item(parent_item, title, id) {
     parent_item.push(item);
 }
 
-// For WP 3.9+
 function rescue_get_menu() {
     var menu = [
         {
@@ -156,7 +188,8 @@ function rescue_get_menu() {
         { text: 'Columns' },
         { text: 'Elements' },
         { text: 'Boxes' },
-        { text: 'Highlights' }
+        { text: 'Highlights' },
+        { text: 'Animations' }
     ];
 
     // Columns
@@ -199,123 +232,37 @@ function rescue_get_menu() {
     rescue_render_item( c, "Red", "redHighlight" );
     rescue_render_item( c, "Yellow", "yellowHighlight" );
 
+    // Animations
+    var c = menu[5].menu = [];
+    rescue_render_item( c, "slideInDown", "slideInDown" );
+    rescue_render_item( c, "slideInLeft", "slideInLeft" );
+    rescue_render_item( c, "slideInRight", "slideInRight" );
+    rescue_render_item( c, "fadeIn", "fadeIn" );
+    rescue_render_item( c, "fadeInLeft", "fadeInLeft" );
+    rescue_render_item( c, "fadeInRight", "fadeInRight" );
+    rescue_render_item( c, "fadeInUp", "fadeInUp" );
+    rescue_render_item( c, "fadeInDown", "fadeInDown" );
+    rescue_render_item( c, "bounceIn", "bounceIn" );
+    rescue_render_item( c, "bounceInLeft", "bounceInLeft" );
+    rescue_render_item( c, "bounceInRight", "bounceInRight" );
+    rescue_render_item( c, "bounceInUp", "bounceInUp" );
+    rescue_render_item( c, "bounceInDown", "bounceInDown" );
+
+
     return menu;
 }
 
-// For WP 3.9+
-function rescue_init_wp39() {
-    tinymce.PluginManager.add('rescue_shortcodes', function( editor, url ) {
-        if (typeof tinymce.plugins == 'undefined') tinymce.plugins = {};
-        if (typeof tinymce.plugins.rescueShortcodeMce == 'undefined')
-          tinymce.plugins.rescueShortcodeMce = {};
-        tinymce.plugins.rescueShortcodeMce.theurl = url;
-        menu = rescue_get_menu();
-        editor.addButton( 'rescue_shortcodes_button', {
-            type: 'splitbutton',
-            style: 'background: url(' + tinymce.plugins.rescueShortcodeMce.theurl + '/images/shortcodes.png' + ') no-repeat 3px 2px;',
-            //image: tinymce.plugins.rescueShortcodeMce.theurl + '/images/shortcodes.png',
-            'menu': menu
-        });
+tinymce.PluginManager.add('rescue_shortcodes', function( editor, url ) {
+    if (typeof tinymce.plugins == 'undefined') tinymce.plugins = {};
+    if (typeof tinymce.plugins.rescueShortcodeMce == 'undefined')
+    tinymce.plugins.rescueShortcodeMce = {};
+    tinymce.plugins.rescueShortcodeMce.theurl = url;
+    menu = rescue_get_menu();
+
+    editor.addButton( 'rescue_shortcodes_button', {
+        type: 'splitbutton',
+        style: 'background: url(' + tinymce.plugins.rescueShortcodeMce.theurl + '/images/shortcodes.png' + ') no-repeat 3px 2px;',
+        //image: tinymce.plugins.rescueShortcodeMce.theurl + '/images/shortcodes.png',
+        'menu': menu
     });
-}
-
-// For WP 3.8 and lower
-function rescue_init_wp38() {
-    tinymce.create('tinymce.plugins.rescueShortcodeMce', {
-        init : function(ed, url){
-            tinymce.plugins.rescueShortcodeMce.theurl = url;
-        },
-        createControl : function(btn, e) {
-            if ( btn == "rescue_shortcodes_button" ) {
-                var a = this;    
-                var btn = e.createSplitButton('rescue_button', {
-                    title: "Insert Shortcode",
-                    image: tinymce.plugins.rescueShortcodeMce.theurl +"/images/shortcodes.png",
-                    icons: false,
-                });
-                btn.onRenderMenu.add(function (c, b) {
-                    
-                    b.add({title : 'Rescue Shortcodes', 'class' : 'mceMenuItemTitle'}).setDisabled(1);
-                    
-                    
-                    // Columns
-                    c = b.addMenu({title:"Columns"});
-                    
-                        a.render( c, "One Half", "half" );
-                        a.render( c, "One Third", "third" );
-                        a.render( c, "One Fourth", "fourth" );
-                        a.render( c, "One Fifth", "fifth" );
-                        a.render( c, "One Sixth", "sixth" )
-                        
-                        c.addSeparator();        
-                                
-                        a.render( c, "Two Thirds", "twothird" );
-                        a.render( c, "Three Fourths", "threefourth" );
-                        a.render( c, "Two Fifths", "twofifth" );
-                        a.render( c, "Three Fifths", "threefifth" );
-                    
-                    b.addSeparator();
-                    
-                    
-                    // Elements
-                    c = b.addMenu({title:"Elements"});
-                                    
-                        a.render( c, "Button", "button" );
-                        a.render( c, "Google Map", "googlemap" );
-                        a.render( c, "Tabs", "tabs" );
-                        a.render( c, "Donation Tabs", "donationtabs" );
-                        a.render( c, "Toggle", "toggle" );
-                        a.render( c, "Spacing", "spacing" );
-                        a.render( c, "Clear Floats", "clear" );
-                        a.render( c, "Icon", "icon" );
-                    
-                    b.addSeparator();
-                    
-                    // Boxes
-                    c = b.addMenu({title:"Boxes"});
-                    
-                        a.render( c, "Blue", "blueBox" );
-                        a.render( c, "Gray", "grayBox" );
-                        a.render( c, "Green", "greenBox" );
-                        a.render( c, "Red", "redBox" );
-                        a.render( c, "Yellow", "yellowBox" );
-                        
-                    b.addSeparator();
-                    
-                    // Highlights
-                    c = b.addMenu({title:"Highlights"});
-                    
-                        a.render( c, "Blue", "blueHighlight" );
-                        a.render( c, "Gray", "grayHighlight" );
-                        a.render( c, "Green", "greenHighlight" );
-                        a.render( c, "Red", "redHighlight" );
-                        a.render( c, "Yellow", "yellowHighlight" );
-                        
-                    
-                    
-                });
-                
-              return btn;
-            }
-            return null;               
-        },
-        render : function(ed, title, id) {
-            ed.add({
-                'title': title,
-                onclick: function () { rescue_on_click(id); }
-            })
-        }
-    
-    });
-    tinymce.PluginManager.add("rescue_shortcodes", tinymce.plugins.rescueShortcodeMce);
-}
-
-(function(){
-  var parts = rescue_wp_version.split('.');
-  if ((parts[0] > 3) || ((parts[0] == 3) && (parts[1] >= 9))) {
-    rescue_init_wp39();
-  } else {
-    rescue_init_wp38();
-  }
-})();
-
+});
