@@ -5,7 +5,7 @@ Donate link: http://rescuethemes.com
 Tags: plugin, widget, shortcodes
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,9 @@ Glad you asked! Here's our current portfolio of themes:
 http://rescuethemes.com/themes-plugins
 
 == Changelog ==
+
+= 1.4 =
+* Updated to Font Awesome v4.1
 
 = 1.3 =
 * Added animation effects
