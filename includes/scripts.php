@@ -15,7 +15,7 @@
 		wp_register_script('rescue_waypoints', plugin_dir_url( __FILE__ ) . 'js/waypoints.min.js', array ( 'jquery' ), '1.0', true );
 
 		wp_register_style('rescue_animate', plugin_dir_url( __FILE__ ) . 'css/animate.css' );
-        wp_enqueue_style( 'font_awesome', plugin_dir_url( __FILE__ ) . 'css/font-awesome.min.css', array(), '4.1.0', 'all' );
+        wp_enqueue_style( 'font_awesome', plugin_dir_url( __FILE__ ) . 'css/font-awesome.min.css', array(), '4.2.0', 'all' );
 		wp_enqueue_style('rescue_shortcode_styles', plugin_dir_url( __FILE__ ) . 'css/rescue_shortcodes_styles.css' );
 
 	}
