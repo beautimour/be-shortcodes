@@ -378,6 +378,7 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	    'duration' => '',
 	    'delay' => '',
 	    'iteration' => '',
+	    'offset' => '',
 	 
 	    ), $atts));
 
@@ -390,7 +391,7 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	    $delay = ($delay) ? ''.$delay. '' : '';
 	    $iteration = ($iteration) ? ''.$iteration. '' : '';
 	 
-	    $rescue_animate = '<div class="wow '.$type.'" data-wow-duration="'.$duration.'" data-wow-delay="'.$delay.'" data-wow-iteration="'.$iteration.'">' . do_shortcode($content) . '</div>';
+	    $rescue_animate = '<div class="wow '.$type.'" data-wow-duration="'.$duration.'" data-wow-offset="'.$offset.'" data-wow-delay="'.$delay.'" data-wow-iteration="'.$iteration.'">' . do_shortcode($content) . '</div>';
 	     
 	    return $rescue_animate;
 	}

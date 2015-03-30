@@ -5,7 +5,7 @@ Donate link: http://rescuethemes.com
 Tags: plugin, widget, shortcodes
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,10 @@ Glad you asked! Here's our current portfolio of themes:
 http://rescuethemes.com/themes-plugins
 
 == Changelog ==
+= 1.6 =
+* Updated to Font Awesome v4.3.0
+* Updated to wow.js to v1.0.3
+
 = 1.5 =
 * Updated to Font Awesome v4.2.0
 
