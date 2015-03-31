@@ -1,7 +1,7 @@
 === Plugin Details ===
 Plugin Name: Rescue Shortcodes
 Contributors: rescuethemes
-Donate link: http://rescuethemes.com
+Donate link: https://rescuethemes.com
 Tags: plugin, widget, shortcodes
 Requires at least: 3.0
 Tested up to: 4.0
