@@ -1,5 +1,3 @@
-// http://goo.gl/sNQp9
-
 jQuery(function($){
 	$(document).ready(function(){
 

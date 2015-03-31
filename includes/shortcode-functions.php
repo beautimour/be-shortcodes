@@ -74,9 +74,9 @@ if( !function_exists('rescue_button_shortcode') ) {
 			'title'				=> 'Visit Site',
 			'target'			=> 'self',
 			'rel'				=> '',
-			'border_radius'	=> '',
+			'border_radius'		=> '',
 			'class'				=> '',
-			'icon_left'		=> '',
+			'icon_left'			=> '',
 			'icon_right'		=> '',
 			'visibility'		=> 'all',
 		), $atts ) );
@@ -109,7 +109,7 @@ if( !function_exists('rescue_box_shortcode') ) {
 			'text_align'		=> 'left',
 			'width'				=> '100%',
 			'margin_top'		=> '',
-			'margin_bottom'	=> '',
+			'margin_bottom'		=> '',
 			'class'				=> '',
 			'visibility'		=> 'all',
 		  ), $atts ) );
@@ -338,13 +338,13 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
 	function RescueFontAwesome($atts) {
 
 	    extract(shortcode_atts(array(
-	    'type'  => '',
-	    'size' => '',
-	    'rotate' => '',
-	    'flip' => '',
-	    'pull' => '',
-	    'animated' => '',
-	    'color' => '',
+	    'type'  	=> '',
+	    'size' 		=> '',
+	    'rotate' 	=> '',
+	    'flip' 		=> '',
+	    'pull' 		=> '',
+	    'animated' 	=> '',
+	    'color' 	=> '',
 	 
 	    ), $atts));
 
@@ -374,11 +374,11 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	function rescue_animate_shortcode($atts, $content = null) {
 
 	    extract(shortcode_atts(array(
-	    'type'  => '',
-	    'duration' => '',
-	    'delay' => '',
+	    'type'  	=> '',
+	    'duration' 	=> '',
+	    'delay' 	=> '',
 	    'iteration' => '',
-	    'offset' => '',
+	    'offset' 	=> '',
 	 
 	    ), $atts));
 
