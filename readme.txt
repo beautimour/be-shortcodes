@@ -9,7 +9,7 @@ Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight WordPress shortcodes plugin for themes developed by Rescue Themes
+A lightweight WordPress shortcodes plugin.
 
 === Description ===
 
@@ -23,15 +23,28 @@ When activated, this plugin will add a button to the WordPress text editor to ea
 
 === Frequently Asked Questions ===
 
-Can I use these shortcodes in any widgetized area?
-
-Yes, you can copy/paste the shortcode provided to you from the text editor into a widget. 
-
 Where can I check out themes by Rescue Themes?
 
 Glad you asked! Here's our current portfolio of themes:
 
 http://rescuethemes.com/themes-plugins
+
+== License Info ==
+Font Awesome - ​http://fontawesome.io
+Fonts: SIL OFL 1.1, CSS: MIT License - http://fontawesome.io/license
+Copyright: @davegandy
+
+Wow.js - ​https://github.com/matthieua/WOW
+MIT License - https://github.com/matthieua/WOW/blob/master/LICENSE-MIT
+Copyright: @mattaussaguel
+
+animate.css - ​https://github.com/daneden/animate.css
+MIT License - https://github.com/daneden/animate.css#license
+Copyright: @_dte
+
+Waypoints - https://github.com/imakewebthings/waypoints
+MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+Copyright: @foodgoesinmouth
 
 == Changelog ==
 = 1.6 =
