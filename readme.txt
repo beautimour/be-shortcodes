@@ -50,7 +50,7 @@ Copyright: @foodgoesinmouth
 
 = 1.7, July 6, 2015 =
 
-* 
+* Fixed typography inheritance
 
 = 1.6 =
 
