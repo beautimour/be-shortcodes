@@ -1,13 +1,13 @@
-=== Plugin Details ===
-Plugin Name: Rescue Shortcodes
-Contributors: rescuethemes
+=== Rescue Shortcodes ===
+Author URI: https://rescuethemes.com
+Plugin URI: https://rescuethemes.com/rescue-shortcodes-plugin/
+Contributors: rescuethemes, jami0821
 Donate link: https://rescuethemes.com
-Tags: plugin, widget, shortcodes
-Requires at least: 3.0
+Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
+Requires at least: 3.9.2
 Tested up to: 4.2.2
-Stable tag: 1.7.1
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Stable Tag: 1.7.1
 
 A lightweight WordPress shortcodes plugin.
 
