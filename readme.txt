@@ -5,7 +5,7 @@ Donate link: https://rescuethemes.com
 Tags: plugin, widget, shortcodes
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.7
+Stable tag: 1.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,10 @@ MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.t
 Copyright: @foodgoesinmouth
 
 == Changelog ==
+
+= 1.7, July 6, 2015 =
+
+* Fixing update files 
 
 = 1.7, July 6, 2015 =
 
