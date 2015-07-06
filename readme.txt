@@ -27,7 +27,7 @@ Where can I check out themes by Rescue Themes?
 
 Glad you asked! Here's our current portfolio of themes:
 
-http://rescuethemes.com/themes-plugins
+https://rescuethemes.com
 
 == License Info ==
 Font Awesome - ​http://fontawesome.io
