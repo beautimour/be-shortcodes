@@ -15,7 +15,7 @@ A lightweight WordPress shortcodes plugin.
 
 When activated, this plugin will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
-Included shortcodes:
+**Included shortcodes:**
 
 * Button - With many options including unlimited colors.
 * Content Toggle - Maybe for an awesome FAQ page.
@@ -31,6 +31,7 @@ Included shortcodes:
 See a demonstration of the shortcodes on the [Rescue Themes site](https://rescuethemes.com/rescue-shortcodes-plugin/).
 
 **New features**
+
 We want to improve the Rescue Shortcodes plugin based on your feedback! Please let us know on the [plugin's Github repo](https://github.com/RescueThemes/rescue-shortcodes) and [subscribe to our mailing list](http://rescuethemes.us6.list-manage.com/subscribe?u=e996b9d9a5&id=a41af7345e) to get notified of new developments.
 
 == Installation ==
