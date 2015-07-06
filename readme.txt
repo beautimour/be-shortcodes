@@ -65,7 +65,7 @@ Copyright: @foodgoesinmouth
 
 == Changelog ==
 
-= 1.7, July 6, 2015 =
+= 1.7.1, July 6, 2015 =
 
 * Fixing update files 
 
