@@ -51,6 +51,7 @@ Copyright: @foodgoesinmouth
 = 1.7, July 6, 2015 =
 
 * Fixed typography inheritance
+* Fixed Font Awesome version reference (4.3.0)
 
 = 1.6 =
 
