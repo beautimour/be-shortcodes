@@ -11,23 +11,34 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A lightweight WordPress shortcodes plugin.
 
-=== Description ===
+== Description ==
 
 When activated, this plugin will add a button to the WordPress text editor to easily insert shortcodes to your posts or pages.
 
-=== Installation ===
+== Installation ==
 
 1. Upload the plugin to `/wp-content/plugins/`. Alternately, you can download this package as a zip and upload it via the WordPress dashboard.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Click the Rescue Themes icon in the WordPress text editor to display your shortcodes options.
 
-=== Frequently Asked Questions ===
+Included shortcodes:
 
-Where can I check out themes by Rescue Themes?
+* Button - With many options including unlimited colors.
+* Content Toggle - Maybe for an awesome FAQ page.
+* Tabbed Content - Create tabbed sections for your content.
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/) Icons - 500+ icons and counting.
+* Animations - Wrap anything with the animation shortcode and watch it come alive.
+* Google Map - Display a map for any location on any post or page.
+* Notification Box - Have certain sections of text stand out by creating notices or alerts.
+* Text Highlight - Quickly highlight sections of text to help more important words stand out.
+* Columns - Separate your content with multiple column options.
+* Spacing - Add space between sections on the fly. 
 
-Glad you asked! Here's our current portfolio of themes:
+== Frequently Asked Questions ==
 
-https://rescuethemes.com
+= Where can I see the shortcodes? = 
+
+See a demonstration of the shortcodes along with the shortcode structure on the [Rescue Themes site](https://rescuethemes.com/rescue-shortcodes-plugin/).
 
 == License Info ==
 Font Awesome - ​http://fontawesome.io
