@@ -52,6 +52,7 @@ Copyright: @foodgoesinmouth
 
 * Fixed typography inheritance
 * Fixed Font Awesome version reference (4.3.0)
+* Added unlimited color option for buttons
 
 = 1.6 =
 

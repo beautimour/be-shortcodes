@@ -43,7 +43,11 @@
 	border-radius: 3px; 
 	background: #aaaaaa; 
 	text-decoration: none !important; 
-	transition: background-color 300ms ease-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
 }
 .rescue-button span.rescue-button-inner { 
 	font-family: inherit; 
@@ -57,26 +61,15 @@
 	text-align: center; 
 	white-space: nowrap;   
 }
-.rescue-button:focus, .rescue-button:hover, .rescue-button:active { background: #333; }
+.rescue-button:focus, .rescue-button:hover, .rescue-button:active { opacity: 0.8; }
 
 .rescue-button.black { background: #3c5166; }
-.rescue-button.black:focus, .rescue-button.black:hover, .rescue-button.black:active { background: #1e2d3c; }
-
 .rescue-button.red { background: #e74c3c; }
-.rescue-button.red:focus, .rescue-button.red:hover, .rescue-button.red:active { background: #c0392b; }
-
 .rescue-button.orange { background: #e67e22; }
-.rescue-button.orange:focus, .rescue-button.orange:hover, .rescue-button.orange:active { background: #d35400; }
-
 .rescue-button.blue { background: #3498db;}
-.rescue-button.blue:focus, .rescue-button.blue:hover, .rescue-button.blue:active { background: #2980b9; }
-
 .rescue-button.green { background: #2ecc71; }
-.rescue-button.green:focus, .rescue-button.green:hover, .rescue-button.green:active { background: #27ae60; }
-
 .rescue-button.white { background: #ecf0f1; }
 .rescue-button.white span.rescue-button-inner { color: #95a5a6;}
-.rescue-button.white:focus, .rescue-button.white:hover, .rescue-button.white:active { background: #e3e3e3; }
 
 .rescue-button.large { font-size: 16px }
 .rescue-button.giant { font-size: 18px }

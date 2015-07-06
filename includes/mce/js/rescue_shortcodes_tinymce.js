@@ -32,7 +32,7 @@ function rescue_on_click(id) {
 
     // Button
     if(id == "button") {
-        tinyMCE.activeEditor.selection.setContent('[rescue_button color="blue" url="http://rescuethemes.com" title="Visit Site" target="blank" class="right" border_radius=""]' + rescueDummyContent + '[/rescue_button]');
+        tinyMCE.activeEditor.selection.setContent('[rescue_button colorhex="#333333" color="blue | red | orange | green | white | black" url="http://rescuethemes.com" title="Visit Site" target="blank" class="right" border_radius=""]' + rescueDummyContent + '[/rescue_button]');
     }
 
 

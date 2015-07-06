@@ -69,7 +69,9 @@ if ( !function_exists( 'rescue_highlight_shortcode' ) ) {
 if( !function_exists('rescue_button_shortcode') ) {
 	function rescue_button_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
-			'color'				=> 'blue',
+			'color'				=> '',
+			'colorhex'			=> '',
+			'colorhexhover'		=> '',
 			'url'				=> 'http://www.rescuethemes.com',
 			'title'				=> 'Visit Site',
 			'target'			=> 'self',
@@ -86,13 +88,16 @@ if( !function_exists('rescue_button_shortcode') ) {
 		$rel = ( $rel ) ? 'rel="'.$rel.'"' : NULL;
 		
 		$button = NULL;
-		$button .= '<a href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $border_radius_style .' '. $rel .'>';
+
+		$button .= '<a style="background: ' . $colorhex . ';" href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $border_radius_style .' '. $rel .'>';
 			$button .= '<span class="rescue-button-inner" '.$border_radius_style.'>';
 				if ( $icon_left ) $button .= '<span class="rescue-button-icon-left icon-'. $icon_left .'"></span>';
 				$button .= $content;
 				if ( $icon_right ) $button .= '<span class="rescue-button-icon-right icon-'. $icon_right .'"></span>';
-			$button .= '</span>';			
+			$button .= '</span>';	
+
 		$button .= '</a>';
+
 		return $button;
 	}
 	add_shortcode('rescue_button', 'rescue_button_shortcode');
