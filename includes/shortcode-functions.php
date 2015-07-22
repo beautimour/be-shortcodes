@@ -389,6 +389,7 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 
 		// load scripts
 		wp_enqueue_script('rescue_wow');
+		wp_enqueue_script('rescue_wow_init');
 		wp_enqueue_style('rescue_animate');
 
 	    $type = ($type) ? ''.$type. '' : '';

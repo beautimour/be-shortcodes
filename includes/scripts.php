@@ -4,7 +4,8 @@
 
 		wp_enqueue_script( 'jquery' );
 
-		wp_register_script('rescue_wow', plugin_dir_url( __FILE__ ) . 'js/wow.min.js', array ( 'jquery'), '1.0', true );
+		wp_register_script('rescue_wow', plugin_dir_url( __FILE__ ) . 'js/wow.min.js', array ( 'jquery'), '1.1.2', true );
+		wp_register_script('rescue_wow_init', plugin_dir_url( __FILE__ ) . 'js/rescue_wow.js', array ( 'jquery' ), '1.0', true );
 		wp_register_script('rescue_tabs', plugin_dir_url( __FILE__ ) . 'js/rescue_tabs.js', array ( 'jquery', 'jquery-ui-tabs'), '1.0', true );
 		wp_register_script('rescue_donation_tabs', plugin_dir_url( __FILE__ ) . 'js/rescue_donation_tabs.js', array ( 'jquery', 'jquery-ui-tabs'), '1.0', true );
 		wp_register_script('rescue_toggle', plugin_dir_url( __FILE__ ) . 'js/rescue_toggle.js', 'jquery', '1.0', true );
