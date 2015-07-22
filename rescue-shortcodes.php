@@ -3,7 +3,7 @@
  * Plugin Name: Rescue Shortcodes
  * Plugin URI:  https://rescuethemes.com/plugins/rescue-shortcodes-plugin/
  * Description: A lightweight shortcodes plugin.
- * Version:     1.7.1
+ * Version:     2.0
  * Author:      Rescue Themes
  * Author URI:  https://rescuethemes.com
  * Text Domain: rescue-shortcodes
@@ -27,22 +27,22 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-/*----------------------------------------------------*/
-/*  Exit if accessed directly
-/*----------------------------------------------------*/
+/**
+ * Exit if accessed directly
+ */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-/*----------------------------------------------------*/
-/* JS and CSS
-/*----------------------------------------------------*/
+/**
+ * Load scripts and styles
+ */
 require_once( dirname(__FILE__) . '/includes/scripts.php' );
 
-/*----------------------------------------------------*/
-/*  Shortcode functions
-/*----------------------------------------------------*/
+/**
+ * Shortcode functions
+ */
 require_once( dirname(__FILE__) . '/includes/shortcode-functions.php');
 
-/*----------------------------------------------------*/
-/*  Add button to WP editor
-/*----------------------------------------------------*/
-require_once( dirname(__FILE__) . '/includes/mce/rescue_shortcodes_tinymce.php');
+/**
+ * Add button to WP editor
+ */
+require_once( dirname(__FILE__) . '/includes/shortcodes-button.php');

@@ -13,5 +13,5 @@ jQuery(function($){
 		// UI accordion
 		$(".rescue-accordion").accordion({autoHeight: false});		
 
-	}); // END doc ready
-}); // END function ($)
+	});
+});
