@@ -4,10 +4,8 @@ Plugin URI: https://rescuethemes.com/rescue-shortcodes-plugin/
 Contributors: rescuethemes, jami0821
 Donate link: https://rescuethemes.com
 Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
-Requires at least: 3.9.2
-Tested up to: 4.2.2
-
-Stable Tag: 1.7.1
+Requires at least: 4.0
+Tested up to: 4.2.3
 
 A lightweight WordPress shortcodes plugin.
 
@@ -26,7 +24,8 @@ When activated, this plugin will add a button to the WordPress text editor to ea
 * Notification Box - Have certain sections of text stand out by creating notices or alerts.
 * Text Highlight - Quickly highlight sections of text to help more important words stand out.
 * Columns - Separate your content with multiple column options.
-* Spacing - Add space between sections on the fly. 
+* Spacing - Add space between sections on the fly.
+* Progress Bar - Display a sliding progress notification bar
 
 See a demonstration of the shortcodes on the [Rescue Themes site](https://rescuethemes.com/rescue-shortcodes-plugin/).
 
@@ -64,6 +63,15 @@ MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.t
 Copyright: @foodgoesinmouth
 
 == Changelog ==
+
+= 2.0, July 22, 2015 =
+
+* Major refractoring of codebase
+* Moved button into media bar with modal display. Shortcodes can now be applied to content from both the Visual and Text tabs
+* Updated to WOW v1.1.2
+* Updated to Animate CSS v3.3.0
+* Localized text and added .pot translation file
+* Replaced toggle shortcode open/close images with font icons
 
 = 1.7.1, July 6, 2015 =
 
