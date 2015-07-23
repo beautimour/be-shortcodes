@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Allow shortcodes in widgets
  */
