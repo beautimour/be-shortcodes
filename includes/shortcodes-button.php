@@ -12,7 +12,7 @@ function rescue_shortcodes_media_button( ) {
     </a>
 
     <style>
-        .rescue-shortcodes-icon::before {
+        .rescue-shortcodes-icon:before {
             -moz-osx-font-smoothing: grayscale;
             color: #888;
             content: "\f334";
