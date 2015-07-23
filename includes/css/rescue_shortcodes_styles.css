@@ -113,8 +113,9 @@
 	color: #333333; 
 	display: block; 
 	padding: 15px 15px 15px 37px; 
-	border: 1px solid #DFDFDF; 
-	background: #fbfbfb url("images/plus.png") no-repeat 15px center; 
+	border: 1px solid #DFDFDF;
+	position: relative;
+	background: #fbfbfb; 
 	outline: 0; 
 	text-transform: none; 
 	letter-spacing: normal; 
@@ -125,9 +126,45 @@
 	margin-top: 10px; 
 	cursor: pointer; 
 }
+.rescue-toggle .rescue-toggle-trigger:before {
+	content: "\f067"; 
+	font-family: FontAwesome; 
+	font-style: normal; 
+	font-weight: normal;
+	color: #cccccc; 
+	font-size: 15px; 
+	padding-left: 1em; 
+	position: absolute; 
+	top: 15px; 
+	left: 0;
+}
 .rescue-toggle .rescue-toggle-trigger:hover { border: 1px solid #c5c5c5; text-decoration: none; }
-.rescue-toggle .rescue-toggle-trigger.active, .rescue-toggle .rescue-toggle-trigger.active:hover { color: #333333; background-color: #fbfbfb; background-image: url("images/minus.png"); text-decoration: none; }
-.rescue-toggle .rescue-toggle-container { display: none; overflow: hidden; padding: 15px; border: 1px solid #ddd; border-top: 0px; font-size:14px;}
+.rescue-toggle .rescue-toggle-trigger.active, .rescue-toggle .rescue-toggle-trigger.active:hover { 
+	color: #333333; 
+	background-color: #fbfbfb; 
+	position: relative;
+	text-decoration: none; 
+}
+.rescue-toggle .rescue-toggle-trigger.active:before {
+	content: "\f068"; 
+	font-family: FontAwesome; 
+	font-style: normal; 
+	font-weight: normal;
+	color: #cccccc; 
+	font-size: 15px; 
+	padding-left: 1em; 
+	position: absolute; 
+	top: 15px; 
+	left: 0;
+}
+.rescue-toggle .rescue-toggle-container { 
+	display: none; 
+	overflow: hidden; 
+	padding: 15px; 
+	border: 1px solid #ddd; 
+	border-top: 0px; 
+	font-size:14px;
+}
 .rescue-toggle .rescue-toggle-container p {font-size:14px;padding:10px 20px 0;}
 
 /*----------------------------------------------------*/
