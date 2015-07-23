@@ -7,6 +7,8 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.2.3
 
+Stable tag: 2.0
+
 A lightweight WordPress shortcodes plugin.
 
 == Description ==
@@ -71,7 +73,7 @@ Copyright: @foodgoesinmouth
 
 = 2.0, July 22, 2015 =
 
-* Major refractoring of codebase
+* Major refactoring of codebase
 * Moved button into media bar with modal display. Shortcodes can now be applied to content from both the Visual and Text tabs
 * Updated to WOW v1.1.2
 * Updated to Animate CSS v3.3.0
