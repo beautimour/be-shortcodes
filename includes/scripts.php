@@ -15,7 +15,7 @@
 		wp_register_script('rescue_progressbar', plugin_dir_url( __FILE__ ) . 'js/rescue_progressbar.js', array ( 'jquery' ), '1.0', true );
 		wp_register_script('rescue_waypoints', plugin_dir_url( __FILE__ ) . 'js/waypoints.min.js', array ( 'jquery' ), '1.0', true );
 
-		wp_register_style('rescue_animate', plugin_dir_url( __FILE__ ) . 'css/animate.css' );
+		wp_register_style('rescue_animate', plugin_dir_url( __FILE__ ) . 'css/animate.min.css', array(), '3.3.0', 'all' );
         wp_enqueue_style( 'font-awesome', plugin_dir_url( __FILE__ ) . 'css/font-awesome.min.css', array(), '4.3.0', 'all' );
 		wp_enqueue_style('rescue_shortcode_styles', plugin_dir_url( __FILE__ ) . 'css/rescue_shortcodes_styles.css' );
 
