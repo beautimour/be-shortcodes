@@ -45,6 +45,11 @@ We want to improve the Rescue Shortcodes plugin based on your feedback! Please l
 
 See a demonstration of the shortcodes along with the shortcode structure on the [Rescue Themes site](https://rescuethemes.com/rescue-shortcodes-plugin/).
 
+== Screenshots ==
+
+1. The placement of the shortcodes toggle button will be in the page and post editor area.
+2. The shortcodes are conveniently displayed in a pop-up box for quick selection.
+
 == License Info ==
 Font Awesome - ​http://fontawesome.io
 Fonts: SIL OFL 1.1, CSS: MIT License - http://fontawesome.io/license
