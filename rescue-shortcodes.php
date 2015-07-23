@@ -35,14 +35,23 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Load scripts and styles
  */
-require_once( dirname(__FILE__) . '/includes/scripts.php' );
+require_once( plugin_dir_path( __FILE__ ) . '/includes/scripts.php' );
 
 /**
  * Shortcode functions
  */
-require_once( dirname(__FILE__) . '/includes/shortcode-functions.php');
+require_once( plugin_dir_path( __FILE__ ) . '/includes/shortcode-functions.php');
 
 /**
  * Add button to WP editor
  */
-require_once( dirname(__FILE__) . '/includes/shortcodes-button.php');
+require_once( plugin_dir_path( __FILE__ ) . '/includes/shortcodes-button.php');
+
+add_action( 'plugins_loaded', 'rescue_shortcodes_load_textdomain' );
+
+/**
+ * Load plugin textdomain.
+ */
+function rescue_shortcodes_load_textdomain() {
+  load_plugin_textdomain( 'rescue-shortcodes', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+}
