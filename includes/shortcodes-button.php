@@ -7,7 +7,7 @@ function rescue_shortcodes_media_button( ) {
     
     $title = __( 'Shortcodes', 'rescue-shortcodes' );  ?>
 
-    <a id="thickbox_shortcode_button" class="button thickbox" title="<?php echo esc_attr( $title ); ?>" href="#TB_inline?width=600&height=640&inlineId=thickbox_shortcode_window">
+    <a id="thickbox_shortcode_button" class="button thickbox" title="<?php echo esc_attr( $title ); ?>" href="#TB_inline?width=600&height=700&inlineId=thickbox_shortcode_window">
         <span class="rescue-shortcodes-icon"></span> <?php echo esc_html( $title ); ?>
     </a>
 
@@ -31,7 +31,7 @@ function rescue_shortcodes_thickbox_content(){ ?>
 
     <div id="thickbox_shortcode_window" style="display: none;">
 
-    <p>See more examples on the <a target="_blank" href="https://rescuethemes.com/rescue-shortcodes-plugin/">Rescue Themes</a> site. Complete list of icon names are available on the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> site.</p>
+    <p>See examples on the <a target="_blank" href="https://rescuethemes.com/rescue-shortcodes-plugin/">Rescue Themes</a> site.</p>
 
     <table cellspacing="0" cellpadding="5" width="100%">
 
@@ -75,8 +75,10 @@ function rescue_shortcodes_thickbox_content(){ ?>
                 <a id="rescue_map" class="insert_shortcode button" href="javascript:void(0);">Google Map</a>
                 <a id="rescue_tabbed" class="insert_shortcode button" href="javascript:void(0);">Tabbed Content</a>
                 <a id="rescue_toggle" class="insert_shortcode button" href="javascript:void(0);">Toggle</a>
+                <a id="rescue_progress" class="insert_shortcode button" href="javascript:void(0);">Progress Bar</a>
                 <a id="rescue_spacing" class="insert_shortcode button" href="javascript:void(0);">Spacing</a>
                 <a id="rescue_clear" class="insert_shortcode button" href="javascript:void(0);">Clear Floats</a>
+                <p>Complete list of icon names are available on the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> site.</p>
                 </td>
             </tr>
 
@@ -203,6 +205,10 @@ function rescue_shortcodes_thickbox_content(){ ?>
 
                 case 'rescue_toggle':
                 shortcode = '[rescue_toggle title="This Is Your Toggle Title"]Example Content[/rescue_toggle]';
+                break;
+
+                case 'rescue_progress':
+                shortcode = '[rescue_progressbar title="Example" percentage="75" color="#f1c40f"]';
                 break;
 
                 case 'rescue_spacing':
