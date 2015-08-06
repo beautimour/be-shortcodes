@@ -7,7 +7,7 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.2.3
 
-Stable tag: 2.1.1
+Stable tag: 2.1
 
 A lightweight WordPress shortcodes plugin.
 
@@ -70,9 +70,6 @@ MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.t
 Copyright: @foodgoesinmouth
 
 == Changelog ==
-
-= 2.1.1, Aug 6, 2015 =
-* Removed unnecessary variable in button function
 
 = 2.1, Aug 6, 2015 =
 * Fixed border radius setting for buttons
