@@ -87,7 +87,7 @@ if( !function_exists('rescue_button_shortcode') ) {
 
 		$button = NULL;
 
-		$button .= '<a style="background: ' . $colorhex . ';border-radius: ' . $border_radius . ' " href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $border_radius_style .' '. $rel .'>';
+		$button .= '<a style="background: ' . $colorhex . ';border-radius: ' . $border_radius . ' " href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $rel .'>';
 			$button .= '<span class="rescue-button-inner">';
 				if ( $icon_left ) $button .= '<span class="rescue-button-icon-left icon-'. $icon_left .'"></span>';
 				$button .= $content;
