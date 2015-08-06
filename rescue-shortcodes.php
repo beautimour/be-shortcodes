@@ -3,7 +3,7 @@
  * Plugin Name: Rescue Shortcodes
  * Plugin URI:  https://rescuethemes.com/plugins/rescue-shortcodes-plugin/
  * Description: A lightweight shortcodes plugin.
- * Version:     2.0
+ * Version:     2.1
  * Author:      Rescue Themes
  * Author URI:  https://rescuethemes.com
  * Text Domain: rescue-shortcodes
@@ -14,7 +14,7 @@
  /*  Copyright 2015  Rescue Themes  ( email : hello@rescuethemes.com )
 
     This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as 
+    it under the terms of the GNU General Public License, version 2, as
     published by the Free Software Foundation.
 
     This program is distributed in the hope that it will be useful,
@@ -53,5 +53,5 @@ add_action( 'plugins_loaded', 'rescue_shortcodes_load_textdomain' );
  * Load plugin textdomain.
  */
 function rescue_shortcodes_load_textdomain() {
-  load_plugin_textdomain( 'rescue-shortcodes', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+  load_plugin_textdomain( 'rescue-shortcodes', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }

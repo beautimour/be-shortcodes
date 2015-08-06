@@ -7,7 +7,7 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.2.3
 
-Stable tag: 2.0
+Stable tag: 2.1
 
 A lightweight WordPress shortcodes plugin.
 
@@ -43,7 +43,7 @@ We want to improve the Rescue Shortcodes plugin based on your feedback! Please l
 
 == Frequently Asked Questions ==
 
-= Where can I see the shortcodes? = 
+= Where can I see the shortcodes? =
 
 See a demonstration of the shortcodes along with the shortcode structure on the [Rescue Themes site](https://rescuethemes.com/rescue-shortcodes-plugin/).
 
@@ -71,8 +71,10 @@ Copyright: @foodgoesinmouth
 
 == Changelog ==
 
-= 2.0, July 22, 2015 =
+= 2.1, Aug 6, 2015 =
+* Fixed border radius setting for buttons
 
+= 2.0, July 22, 2015 =
 * Major refactoring of codebase
 * Moved button into media bar with modal display. Shortcodes can now be applied to content from both the Visual and Text tabs
 * Updated to WOW v1.1.2
@@ -81,46 +83,36 @@ Copyright: @foodgoesinmouth
 * Replaced toggle shortcode open/close images with font icons
 
 = 1.7.1, July 6, 2015 =
-
-* Fixing update files 
+* Fixing update files
 
 = 1.7, July 6, 2015 =
-
 * Fixed typography inheritance
 * Fixed Font Awesome version reference (4.3.0)
 * Added unlimited color option for buttons
 
 = 1.6 =
-
 * Updated to Font Awesome v4.3.0
 * Updated to wow.js to v1.0.3
 
 = 1.5 =
-
 * Updated to Font Awesome v4.2.0
 
 = 1.4 =
-
 * Updated to Font Awesome v4.1
 
 = 1.3 =
-
 * Added animation effects
 * Added widget support
 * Removed WP 3.8 support
 
 = 1.2.1 =
-
 * Updated links and added readme.txt
 
 = 1.2 =
-
 * Updated TinyMCE for WordPress 3.9
 
 = 1.1 =
-
 * Added Font Awesome Icons
 
 = 1.0 =
-
 * Initial release
