@@ -9,10 +9,10 @@ add_filter('widget_text', 'do_shortcode');
  * Fix Shortcodes
  */
 if( !function_exists('rescue_fix_shortcodes') ) {
-	function rescue_fix_shortcodes($content){   
+	function rescue_fix_shortcodes($content){
 		$array = array (
-			'<p>['		=> '[', 
-			']</p>'		=> ']', 
+			'<p>['		=> '[',
+			']</p>'		=> ']',
 			']<br />'	=> ']'
 		);
 		$content = strtr($content, $array);
@@ -58,7 +58,7 @@ if ( !function_exists( 'rescue_highlight_shortcode' ) ) {
 		  ),
 		  $atts ) );
 		  return '<span class="rescue-highlight rescue-highlight-'. $color .' '. $class .' rescue-'. $visibility .'">' . do_shortcode( $content ) . '</span>';
-	
+
 	}
 	add_shortcode('rescue_highlight', 'rescue_highlight_shortcode');
 }
@@ -72,7 +72,7 @@ if( !function_exists('rescue_button_shortcode') ) {
 			'color'				=> '',
 			'colorhex'			=> '',
 			'colorhexhover'		=> '',
-			'url'				=> 'http://www.rescuethemes.com',
+			'url'				=> 'https://rescuethemes.com',
 			'title'				=> 'Visit Site',
 			'target'			=> 'self',
 			'rel'				=> '',
@@ -82,19 +82,17 @@ if( !function_exists('rescue_button_shortcode') ) {
 			'icon_right'		=> '',
 			'visibility'		=> 'all',
 		), $atts ) );
-		
-		
-		$border_radius_style = ( $border_radius ) ? 'style="border-radius:'. $border_radius .'"' : NULL;		
+
 		$rel = ( $rel ) ? 'rel="'.$rel.'"' : NULL;
-		
+
 		$button = NULL;
 
-		$button .= '<a style="background: ' . $colorhex . ';" href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $border_radius_style .' '. $rel .'>';
-			$button .= '<span class="rescue-button-inner" '.$border_radius_style.'>';
+		$button .= '<a style="background: ' . $colorhex . ';border-radius: ' . $border_radius . ' " href="' . $url . '" class="rescue-button ' . $color . ' '. $class .' rescue-'. $visibility .'" target="_'.$target.'" title="'. $title .'" '. $border_radius_style .' '. $rel .'>';
+			$button .= '<span class="rescue-button-inner">';
 				if ( $icon_left ) $button .= '<span class="rescue-button-icon-left icon-'. $icon_left .'"></span>';
 				$button .= $content;
 				if ( $icon_right ) $button .= '<span class="rescue-button-icon-right icon-'. $icon_right .'"></span>';
-			$button .= '</span>';	
+			$button .= '</span>';
 
 		$button .= '</a>';
 
@@ -106,7 +104,7 @@ if( !function_exists('rescue_button_shortcode') ) {
 /**
  * Boxes
  */
-if( !function_exists('rescue_box_shortcode') ) { 
+if( !function_exists('rescue_box_shortcode') ) {
 	function rescue_box_shortcode( $atts, $content = null ) {
 		extract( shortcode_atts( array(
 			'color'				=> 'gray',
@@ -118,7 +116,7 @@ if( !function_exists('rescue_box_shortcode') ) {
 			'class'				=> '',
 			'visibility'		=> 'all',
 		  ), $atts ) );
-		  
+
 			$style_attr = '';
 			if( $margin_bottom ) {
 				$style_attr .= 'margin-bottom: '. $margin_bottom .';';
@@ -126,7 +124,7 @@ if( !function_exists('rescue_box_shortcode') ) {
 			if ( $margin_top ) {
 				$style_attr .= 'margin-top: '. $margin_top .';';
 			}
-		  
+
 		  $alert_content = '';
 		  $alert_content .= '<div class="rescue-box ' . $color . ' '.$float.' '. $class .' rescue-'. $visibility .'" style="text-align:'. $text_align .'; width:'. $width .';'. $style_attr .'">';
 		  $alert_content .= ' '. do_shortcode($content) .'</div>';
@@ -161,10 +159,10 @@ if( !function_exists('rescue_toggle_shortcode') ) {
 			'class'			=> '',
 			'visibility'	=> 'all',
 		), $atts ) );
-		 
+
 		// Enque scripts
 		wp_enqueue_script('rescue_toggle');
-		
+
 		// Display the Toggle
 		return '<div class="rescue-toggle '. $class .' rescue-'. $visibility .'"><h3 class="rescue-toggle-trigger">'. $title .'</h3><div class="rescue-toggle-container">' . do_shortcode($content) . '</div></div>';
 	}
@@ -176,11 +174,11 @@ if( !function_exists('rescue_toggle_shortcode') ) {
  */
 if (!function_exists('rescue_tabgroup_shortcode')) {
 	function rescue_tabgroup_shortcode( $atts, $content = null ) {
-		
+
 		//Enque scripts
 		wp_enqueue_script('jquery-ui-tabs');
 		wp_enqueue_script('rescue_tabs');
-		
+
 		// Display Tabs
 		$defaults = array();
 		extract( shortcode_atts( $defaults, $atts ) );
@@ -222,7 +220,7 @@ if (!function_exists('rescue_tab_shortcode')) {
  */
 if (!function_exists('rescue_donation_tabgroup_shortcode')) {
 	function rescue_donation_tabgroup_shortcode( $atts, $content = null ) {
-		
+
 		//Enque scripts
 		wp_enqueue_script('jquery-ui-tabs');
 		wp_enqueue_script('rescue_donation_tabs');
@@ -272,7 +270,7 @@ if (!function_exists('rescue_donation_tab_shortcode')) {
  * Donation Progress
  */
 if( !function_exists('rescue_progressbar_shortcode') ) {
-	function rescue_progressbar_shortcode( $atts  ) {		
+	function rescue_progressbar_shortcode( $atts  ) {
 		extract( shortcode_atts( array(
 			'title'			=> '',
 			'percentage'	=> '75',
@@ -305,7 +303,7 @@ if( !function_exists('rescue_progressbar_shortcode') ) {
  */
 if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 	function rescue_shortcode_googlemaps($atts, $content = null) {
-		
+
 		extract(shortcode_atts(array(
 				'title'			=> '',
 				'location'		=> '',
@@ -316,21 +314,21 @@ if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 				'class'			=> '',
 				'visibility'	=> 'all',
 		), $atts));
-		
+
 		// load scripts
 		wp_enqueue_script('rescue_googlemap');
 		wp_enqueue_script('rescue_googlemap_api');
-		
-		
+
+
 		$output = '<div id="map_canvas_'.rand(1, 100).'" class="googlemap '. $class .' rescue-'. $visibility .'" style="height:'.$height.'px;width:100%">';
 			$output .= (!empty($title)) ? '<input class="title" type="hidden" value="'.$title.'" />' : '';
 			$output .= '<input class="location" type="hidden" value="'.$location.'" />';
 			$output .= '<input class="zoom" type="hidden" value="'.$zoom.'" />';
 			$output .= '<div class="map_canvas"></div>';
 		$output .= '</div>';
-		
+
 		return $output;
-	   
+
 	}
 	add_shortcode("rescue_googlemap", "rescue_shortcode_googlemaps");
 endif;
@@ -349,12 +347,12 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
 	    'pull' 		=> '',
 	    'animated' 	=> '',
 	    'color' 	=> '',
-	 
+
 	    ), $atts));
 
 		// load scripts
 		wp_enqueue_style('font_awesome');
-	     
+
 	    $type = ($type) ? 'fa-'.$type. '' : '';
 	    $size = ($size) ? 'fa-'.$size. '' : '';
 	    $rotate = ($rotate) ? 'fa-rotate-'.$rotate. '' : '';
@@ -362,12 +360,12 @@ if (! function_exists( 'RescueFontAwesome' ) ) :
 	    $pull = ($pull) ? 'pull-'.$pull. '' : '';
 	    $animated = ($animated) ? 'fa-spin' : '';
 	    $color = ($color) ? ''.$color. '' : '';
-	 
+
 	    $theAwesomeFont = '<i style="color:'.$color.'" class="fa '.sanitize_html_class($type).' '.sanitize_html_class($size).' '.sanitize_html_class($rotate).' '.sanitize_html_class($flip).' '.sanitize_html_class($pull).' '.sanitize_html_class($animated).'"></i>';
-	     
+
 	    return $theAwesomeFont;
 	}
- 
+
 	add_shortcode('icon', 'RescueFontAwesome');
 endif;
 
@@ -383,7 +381,7 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	    'delay' 	=> '',
 	    'iteration' => '',
 	    'offset' 	=> '',
-	 
+
 	    ), $atts));
 
 		// load scripts
@@ -395,12 +393,11 @@ if (! function_exists( 'rescue_animate_shortcode' ) ) :
 	    $duration = ($duration) ? ''.$duration. '' : '';
 	    $delay = ($delay) ? ''.$delay. '' : '';
 	    $iteration = ($iteration) ? ''.$iteration. '' : '';
-	 
+
 	    $rescue_animate = '<div class="wow '.$type.'" data-wow-duration="'.$duration.'" data-wow-offset="'.$offset.'" data-wow-delay="'.$delay.'" data-wow-iteration="'.$iteration.'">' . do_shortcode($content) . '</div>';
-	     
+
 	    return $rescue_animate;
 	}
- 
+
 	add_shortcode('rescue_animate', 'rescue_animate_shortcode');
 endif;
-
