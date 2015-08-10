@@ -7,7 +7,7 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.2.3
 
-Stable tag: 2.1
+Stable tag: 2.1.1
 
 A lightweight WordPress shortcodes plugin.
 
@@ -71,7 +71,10 @@ Copyright: @foodgoesinmouth
 
 == Changelog ==
 
-= 2.1, Aug 6, 2015 =
+= 2.1.1, Aug 10, 2015 =
+* Updated to Font Awesome v4.4.0
+
+= 2.1.0, Aug 6, 2015 =
 * Fixed border radius setting for buttons
 
 = 2.0, July 22, 2015 =
