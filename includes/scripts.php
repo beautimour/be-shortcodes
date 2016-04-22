@@ -39,7 +39,7 @@ if( !function_exists ('rescue_shortcodes_admin_scripts') ) :
 	 * Register the shortcode button script for the modal window on posts
 	 */
 	function rescue_shortcodes_admin_scripts() {
-	        wp_register_script('rescue_shortcode_buttons', plugin_dir_url( __FILE__ ) . 'js/shortcode-buttons.js', array ( 'jquery' ), '1.0', true );
+		wp_register_script('rescue_shortcode_buttons', plugin_dir_url( __FILE__ ) . 'js/shortcode-buttons.js', array ( 'jquery' ), '1.0', true );
 	}
 
 endif;
