@@ -313,11 +313,17 @@ if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 				'align'			=> '',
 				'class'			=> '',
 				'visibility'	=> 'all',
+				'key'			=> '',
 		), $atts));
 
 		// load scripts
 		wp_enqueue_script('rescue_googlemap');
-		wp_enqueue_script('rescue_googlemap_api');
+		
+		// Load Google API key if provided. Google requires new site to use API
+		$api_key = ! empty( $key ) ? '&key=' . $key : '';
+
+		wp_enqueue_script('rescue_googlemap_api', 'https://maps.googleapis.com/maps/api/js?sensor=false' . $api_key , array('jquery'), '1.0', true );
+
 
 
 		$output = '<div id="map_canvas_'.rand(1, 100).'" class="googlemap '. $class .' rescue-'. $visibility .'" style="height:'.$height.'px;width:100%">';
