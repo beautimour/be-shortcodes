@@ -304,7 +304,7 @@ if( !function_exists('rescue_progressbar_shortcode') ) {
 if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 	function rescue_shortcode_googlemaps($atts, $content = null) {
 
-		extract(shortcode_atts(array(
+		$atts = shortcode_atts(array(
 				'title'			=> '',
 				'location'		=> '',
 				'width'			=> '',
@@ -314,10 +314,20 @@ if (! function_exists( 'rescue_shortcode_googlemaps' ) ) :
 				'class'			=> '',
 				'visibility'	=> 'all',
 				'key'			=> '',
-		), $atts));
+		), $atts );
 
 		// load scripts
 		wp_enqueue_script('rescue_googlemap');
+		
+		$title = sanitize_text_field( $atts['title'] );
+		$location = sanitize_text_field( $atts['location'] );
+		$width = intval( $atts['width'] );
+		$height = intval( $atts['height'] );
+		$zoom = intval( $atts['zoom'] );
+		$align = sanitize_text_field( $atts['align'] );
+		$class = sanitize_text_field( $atts['class'] );
+		$visibility = sanitize_text_field( $atts['visibility'] );
+		$key = sanitize_text_field( $atts['key'] );
 		
 		// Load Google API key if provided. Google requires new site to use API
 		$api_key = ! empty( $key ) ? '&key=' . $key : '';
