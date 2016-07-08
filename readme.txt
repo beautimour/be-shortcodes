@@ -70,6 +70,8 @@ MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.t
 Copyright: @foodgoesinmouth
 
 == Changelog ==
+= 2.2.1, July 8, 2016 =
+* Added API key support for Google Maps
 
 = 2.2, Apr 22, 2016 =
 * Updated Font Awesome to version 4.6.1
