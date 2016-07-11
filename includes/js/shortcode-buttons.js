@@ -64,7 +64,7 @@
           break;
 
         case 'rescue_map':
-          shortcode = '[rescue_googlemap title="Rescue Themes Offices" location="5046 S Greenwood Ave, Chicago, IL 60615" zoom="14" height=250]';
+          shortcode = '[rescue_googlemap title="Rescue Themes Offices" location="5046 S Greenwood Ave, Chicago, IL 60615" zoom="14" height=250 key=]';
           break;
 
         case 'rescue_tabbed':
