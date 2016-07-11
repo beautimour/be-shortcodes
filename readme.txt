@@ -7,7 +7,7 @@ Tags: shortcodes, buttons, columns, tabs, animations, spacing, highlight
 Requires at least: 4.0
 Tested up to: 4.5
 
-Stable tag: 2.2
+Stable tag: 2.2.1
 
 A lightweight WordPress shortcodes plugin.
 
@@ -22,7 +22,7 @@ When activated, this plugin will add a button to the WordPress text editor to ea
 * Tabbed Content - Create tabbed sections for your content.
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/) Icons - 500+ icons and counting.
 * Animations - Wrap anything with the animation shortcode and watch it come alive.
-* Google Map - Display a map for any location on any post or page.
+* Google Map - Display a map for any location on any post or page. Requires a Google API key for new sites.
 * Notification Box - Have certain sections of text stand out by creating notices or alerts.
 * Text Highlight - Quickly highlight sections of text to help more important words stand out.
 * Columns - Separate your content with multiple column options.
@@ -70,6 +70,8 @@ MIT License - https://github.com/imakewebthings/waypoints/blob/master/licenses.t
 Copyright: @foodgoesinmouth
 
 == Changelog ==
+= 2.2.1, July 8, 2016 =
+* Added API key support for Google Maps
 
 = 2.2, Apr 22, 2016 =
 * Updated Font Awesome to version 4.6.1
