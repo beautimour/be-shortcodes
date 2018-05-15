@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:  Be Shortcodes
- * Plugin URI:   https://beautimour.com/
+ * Plugin URI:   https://github.com/beautimour/be-shortcodes
  * Description:  A lightweight shortcodes plugin created by Beautimour.
  * Version:      1.0.0
  * Author:       Beautimour
