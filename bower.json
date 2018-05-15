@@ -1,0 +1,21 @@
+{
+  "name": "be-shortcodes",
+  "description": "A lightweight shortcodes plugin for themes developed by Beautimour",
+  "authors": [
+    "Beautimour"
+  ],
+  "license": "GPL v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontAwesome#4.7.0",
+    "animate.css": "animation.css#^3.5.2",
+    "waypoints": "^4.0.1",
+    "wow": "^1.1.2"
+  }
+}

@@ -1,0 +1,83 @@
+/**
+ * Responsive
+ */
+@media only screen and (max-width: 520px) {
+	.be-one-half, .be-one-third, .be-two-third, .be-three-fourth, .be-one-fourth, .be-one-fifth, .be-two-fifth, .be-three-fifth, .be-one-sixth {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.be-box, .be-box.left, .be-box.right {
+		float: none;
+		width: 100% !important;
+	}
+
+	.be-tabs ul.ui-tabs-nav {
+		margin-left: 0;
+	}
+
+	.be-tabs ul.ui-tabs-nav li {
+		width: 100%;
+	}
+
+	.be-tabs ul.ui-tabs-nav li a {
+		border-left-width: 1px;
+	}
+
+	.be-tabs ul.ui-tabs-nav .ui-state-active a, .be-tabs ul.ui-tabs-nav .ui-state-active a:hover {
+		height: 39px;
+		padding-top: 0;
+		margin-left: 0;
+		top: auto;
+		background-color: #eee;
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+.be-hidden-desktop,
+.be-visible-phone,
+.be-visible-tablet {
+	display: none;
+}
+
+@media only screen and (max-width: 959px) {
+	.be-hidden-desktop {
+		display: block;
+	}
+
+	.be-visible-desktop {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.be-hidden-desktop {
+		display: block;
+	}
+
+	.be-visible-desktop {
+		display: none;
+	}
+
+	.be-hidden-tablet {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.be-hidden-desktop {
+		display: block;
+	}
+
+	.be-visible-desktop {
+		display: none;
+	}
+
+	.be-hidden-phone {
+		display: none;
+	}
+}

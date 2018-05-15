@@ -1,0 +1,81 @@
+/**
+ * Button
+ */
+.be-button {
+	margin: 20px 5px 5px 0;
+	cursor: pointer;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+	outline: none;
+	border-radius: 3px;
+	background-color: #aaaaaa;
+	text-decoration: none !important;
+	border: 0 !important;
+	transition: all 0.2s ease-in-out 0s;
+
+	.be-button-inner {
+		font-family: inherit;
+		display: block;
+		color: #fff;
+		font-weight: inherit;
+		font-size: 14px;
+		padding: 0.625rem 1.25rem 0.6875rem;
+		line-height: normal;
+		text-decoration: none;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	&:focus,
+	&:hover,
+	&:active {
+		opacity: .8;
+	}
+
+	&.black {
+		background-color: #3c5166;
+	}
+
+	&.red {
+		background-color: #e74c3c;
+	}
+
+	&.orange {
+		background-color: #e67e22;
+	}
+
+	&.blue {
+		background-color: #3498db;
+	}
+
+	&.green {
+		background-color: #2ecc71;
+	}
+
+	&.white {
+		background-color: #ecf0f1;
+
+		.be-button-inner {
+			color: #95a5a6;
+		}
+	}
+
+	&.large {
+		font-size: 16px;
+	}
+
+	&.giant {
+		font-size: 18px;
+	}
+
+	&.left {
+		float: left;
+	}
+
+	&.right {
+		float: right;
+		margin-right: 0;
+		margin-left: 5px;
+	}
+}
